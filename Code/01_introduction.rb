@@ -77,7 +77,7 @@ puts name
   =begin
          code code code code
          code code code code
- = end
+ =end
 
 
 
@@ -88,7 +88,7 @@ name = "Joe"
 
 age = "25"
 
-puts "My name is #{name}, I am {age} years old."
+puts "My name is #{name}, I am #{age} years old."
 
 
 
