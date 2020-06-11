@@ -7,7 +7,11 @@ IF
 
 if 20 < 30
   puts "That's true!!"
-end password = "Good morning"
+end 
+
+
+
+password = "Good morning"
 
 puts "Enter your password"
 
@@ -28,7 +32,10 @@ if 20 > 30
   puts "That's true!"
 else
   puts "That's not true!"
-end password = "Good morning"
+end 
+
+
+password = "Good morning"
 
 puts "Enter your password"
 
