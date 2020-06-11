@@ -10,7 +10,6 @@ if 20 < 30
 end 
 
 
-
 password = "Good morning"
 
 puts "Enter your password"
