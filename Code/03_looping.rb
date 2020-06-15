@@ -113,13 +113,15 @@ end
 
 #6.	EACH METHOD
 
-number.each do |x|
+numbers = [1,2,3,4,5]
+
+numbers.each do |x|
   puts "Displaying number: #{x}"
 end
 
 #ANOTHER SYNTAX FOR THIS:
 
-number.each { |x|
+numbers.each { |x|
   puts "Displaying number: #{x}"
  }
 
