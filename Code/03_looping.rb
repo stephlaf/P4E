@@ -111,7 +111,7 @@ end
 # end
 
 
-6.	EACH METHOD
+#6.	EACH METHOD
 
 number.each do |x|
   puts "Displaying number: #{x}"
