@@ -1,4 +1,4 @@
-#1. ACCESSING AND ELEMENT FROM AN ARRAY
+#1. ACCESSING AN ELEMENT FROM AN ARRAY
 
 #Display first post only
 
@@ -12,13 +12,8 @@ puts posts[0]
 
 #add a new post to my collection of posts
 
-posts = ["post1", "post2", "post3"]
 
-posts << "post4"
-
-puts posts
-
-or
+#end
 
 posts = ["post1", "post2", "post3"]
 
@@ -27,9 +22,48 @@ posts.push("post4")
 puts posts
 
 
+#beginning
+
+posts = ["post1", "post2", "post3"]
+
+posts.unshift("new_post")
+
+puts posts
+
+
+#by index
+
+posts = ["post1", "post2", "post3"]
+
+posts.insert(1, "new_post")
+
+puts posts
+
+
+
 # 3. DELETING AN ELEMENT FROM AN ARRAY
 
 #deleting one of my posts
+
+#end
+
+posts = ["post1", "post2", "post3"]
+
+posts.pop
+
+puts posts
+
+
+#beginning
+
+posts = ["post1", "post2", "post3"]
+
+posts.shift
+
+puts posts
+
+
+#by index
 
 posts = ["post1", "post2", "post3"]
 
@@ -38,10 +72,19 @@ posts.delete_at(1)
 puts posts
 
 
+#by value
+
+posts = ["post1", "post2", "post3"]
+
+posts.delete("post1")
+
+puts posts
+
+
 
 # 4. CREATING A HASH
 
-#restaurant menu: dusplay the dishes + prices
+#restaurant menu: display the dishes + prices
 
 restaurant_menu = {
   "Pizza" => "10€",
@@ -60,6 +103,7 @@ puts restaurant_menu
 
 # 5. ACCESSING A KEY-VALUE PAIR FROM A HASH
 
+
 # online menu -> display the price for a specific dish
 
 restaurant_menu = {
@@ -69,6 +113,7 @@ restaurant_menu = {
 }
 
 puts restaurant_menu["Pizza"]
+
 
 
 # 6. ADDING A KEY-VALUE PAIR TO A HASH
@@ -81,7 +126,7 @@ restaurant_menu = {
   "Steak" => "18€"
 }
 
-restaurant_menu["Fish"]=["15€"]
+restaurant_menu["Fish"] = "15€"
 
 puts restaurant_menu
 
@@ -102,9 +147,22 @@ restaurant_menu.delete("Pizza")
 puts restaurant_menu
 
 
+# 8. UPDATING A KEY-VALUE PAIR FROM A HASH
+
+# updating the price of a dish
+
+restaurant_menu = {
+  "Pizza" => "10€",
+  "Pasta" => "12€",
+  "Steak" => "18€"
+}
+
+restaurant_menu.[“Pizza] = "11€"
+
+puts restaurant_menu
 
 
-# 8. ITERATING OVER AN ARRAY
+# 9. ITERATING OVER AN ARRAY
 
 #displaying the main ingredient for each of our recipes
 
@@ -115,7 +173,7 @@ recipes.each do |ingredient|
 end
 
 
-# 9. ITERATING OVER A MULTIDIMENSIONAL ARRAY
+# 10. ITERATING OVER A MULTIDIMENSIONAL ARRAY
 
 #displaying main ingredients for main dishes and for deserts
 
@@ -127,9 +185,10 @@ recipes.each do |sub_array|
   end
 end
 
-# 10. ITERATING OVER A HASH
 
-# display the dishes + prices in a customized way 
+# 11. ITERATING OVER A HASH
+
+# display the dishes + prices in a customized way
 
 restaurant_menu = {
   "Pizza" => "10€",
