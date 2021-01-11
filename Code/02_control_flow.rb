@@ -136,11 +136,10 @@ puts num1 <= num2
 
 # &&  (AND)
 
-# All have to be true
-
 # true && true => true
 # true && false => false
 # false && false => false
+# All have to be true for it to return true
 
 correct_username = "Star"
 puts "Please enter your username"
@@ -159,17 +158,28 @@ end
 
 # ||  (OR)
 
-# 1 or more has to be true
-
 # true || true => true
 # true || false => true
 # false || false => false
+# 1 or more has to be true for it to return true
 
 if correct_username == entered_username || correct_password == entered_password
   puts "You are logged in because you know either the username, OR the password, OR both"
 else
   puts "You are not logged in, wrong credentials for BOTH the username and password"
 end
+
+
+time = 6
+
+if time > 12 || time == 24
+  puts "It's after noon or midnight"
+elsif time < 12
+  puts "It's before noon"
+else
+  puts "It's noon"
+end
+
 
 
 
@@ -189,7 +199,7 @@ else
   puts "It's noon"
 end
 
-# If statements read from top to bottom. It will ignore every other condition once it finds a true condition.
+# Conditional statements read from top to bottom. It will ignore every other condition when it finds a true condition.
 # In this example even though time is 6, it still reads "It's after noon", instead of "It's 6 o'clock".
 
 
@@ -225,6 +235,7 @@ end
 
 
 
+
 ##################################
 ##  NESTING CONTROL STATEMENTS  ##
 ##################################
@@ -251,8 +262,8 @@ if entered_username == correct_username && entered_password == correct_password
     # The 'if' statement is indented because it is INSIDE the other 'if' statement.
     puts "What will be your new password?"
     new_password = gets.chomp
-    password1 = new_password
-    puts "This is your new password: #{password1}"
+    correct_password = new_password
+    puts "This is your new password: #{correct_password}"
   elsif answer == "no"
     puts "Ok, we will not change your password"
   else
