@@ -166,9 +166,9 @@ end
 # false || false => false
 
 if correct_username == entered_username || correct_password == entered_password
-  puts "You are logged in, you know either the username OR the password, OR both"
+  puts "You are logged in because you know either the username, OR the password, OR both"
 else
-  puts "You are not logged in, wrong credentials for both the username and password"
+  puts "You are not logged in, wrong credentials for BOTH the username and password"
 end
 
 
@@ -229,7 +229,7 @@ end
 ##  NESTING CONTROL STATEMENTS  ##
 ##################################
 
-# You can put 'if' statements inside other 'if' statements, etc. Just be sure to focus on your indentation!
+# You can put 'if' statements inside other 'if' statements, etc. Just be sure to focus on your indentation to avoid confusion!
 
 correct_username = "John Smith"
 correct_password = "John's Password"
@@ -242,14 +242,13 @@ entered_password = gets.chomp
 
 
 if entered_username == correct_username && entered_password == correct_password
-  # ^This 'if' statement ends on line 264
 
   puts "Welcome #{correct_username}!"
   puts "Do you want to change your password?"
   answer = gets.chomp
 
   if answer == "yes"
-    # ^This nested 'if' statement ends on line 259. It is indented because it is INSIDE the other if statement.
+    # The 'if' statement is indented because it is INSIDE the other 'if' statement.
     puts "What will be your new password?"
     new_password = gets.chomp
     password1 = new_password
