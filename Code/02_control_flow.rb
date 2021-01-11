@@ -210,7 +210,7 @@ time = 6
 
 if time > 12
   puts "It's after noon"
-elsif time == 6  # This is now before the time < 12 condition
+elsif time == 6  # This is now before the 'time < 12' condition
   puts "It's 6 o'clock!"
 elsif time < 12
   puts "It's before noon"
