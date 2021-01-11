@@ -2,6 +2,7 @@
 ##   IF   ##
 ############
 
+
 # if (CONDITION)
 #   # (CODE that will execute if the condition is true)
 # end
@@ -104,6 +105,7 @@ end
 ##  RELATIONAL OPERATORS  ##
 ############################
 
+
 num1 = 2
 num2 = 3
 
@@ -135,6 +137,7 @@ puts num1 <= num2
 #########################
 ##  BOOLEAN OPERATORS  ##
 #########################
+
 
 # &&  (AND)
 
@@ -189,6 +192,7 @@ end
 ##  ORDER OF READING: TOP TO BOTTOM  ##
 #######################################
 
+
 time = 6
 
 if time > 12
@@ -241,6 +245,7 @@ end
 ##################################
 ##  NESTING CONTROL STATEMENTS  ##
 ##################################
+
 
 # You can put 'if' statements inside other 'if' statements, etc. Just be sure to focus on your indentation to avoid confusion!
 
