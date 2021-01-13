@@ -116,6 +116,7 @@ array = [2, 1, 5, 6, 3, 8]
 array.each { |x| puts x }
 
 
+
 ###########
 #  TIMES  #
 ###########
@@ -134,8 +135,11 @@ counter = 1
 end
 
 
-########### EXAMPLES ##########
 
+
+###############################
+########### EXAMPLES ##########
+###############################
 
 
 # I want to do the same thing using all of them:
@@ -211,9 +215,9 @@ end
 
 
 
-########################
-#  REAL-LIFE EXAMPLES  #
-########################
+####################
+#  OTHER EXAMPLES  #
+####################
 
 # If you had a blog and wanted to display all
 # the posts a certain way on your home page: 
