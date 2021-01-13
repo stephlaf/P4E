@@ -112,7 +112,7 @@ end
 
 array = [2, 1, 5, 6, 3, 8]
 
-# Returns 2, 1, 5, 6, 3, 8 in order
+# Returns 2, 1, 5, 6, 3, 8 in order it is written (does not sort)
 array.each { |x| puts x }
 
 
