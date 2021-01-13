@@ -37,7 +37,7 @@ until number == 11
 end
 
 # This will loop forever because the number will never equal 11
-
+# Use Ctrl+C to interrupt in the terminal
 
 
 #########
