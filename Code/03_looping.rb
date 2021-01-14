@@ -8,7 +8,7 @@ while number < 11
   puts number
   number += 1  # (same as: number = number + 1)
 end
-# Returns 1 to 10
+# Displays 1 to 10
 
 
 
@@ -22,7 +22,7 @@ until number == 11
   puts number
   number += 1
 end
-# Returns 1 to 10
+# Displays 1 to 10
 
 
 
@@ -44,14 +44,14 @@ end
 #  FOR  #
 #########
 
-# Returns 1 to 10
+# Displays 1 to 10
 for num in 1..10   
   puts num
 end
 
 puts "====="
 
-# Returns 1 to 9
+# Displays 1 to 9
 for num in 1...10
   puts num
 end
@@ -87,7 +87,7 @@ end
 
 number = 1
 
-# Returns 1 to 5
+# Displays 1 to 5
 loop do 
   break if number > 5
   puts number
@@ -102,7 +102,7 @@ end
 
 array = [1, 2, 3, 4, 5, 6]
 
-# Returns 1 to 6
+# Displays 1 to 6
 array.each do | x |
   puts "This is my number!"
   puts x
@@ -112,7 +112,7 @@ end
 
 array = [2, 1, 5, 6, 3, 8]
 
-# Returns 2, 1, 5, 6, 3, 8 in order it is written (does not sort)
+# Displays 2, 1, 5, 6, 3, 8 in order it is written (does not sort)
 array.each { |x| puts x }
 
 
@@ -128,7 +128,7 @@ end
 
 counter = 1
 
-# Returns 1 to 10
+# Displays 1 to 10
 10.times do 
   puts counter
   counter += 1
