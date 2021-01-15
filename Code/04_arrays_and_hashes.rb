@@ -224,6 +224,7 @@ recipes.each do |ingredient|
 end
 
 
+
 # 10. ITERATING OVER A MULTIDIMENSIONAL ARRAY
 
 #displaying main ingredients for main dishes and for deserts
@@ -236,11 +237,6 @@ recipes.each do |sub_array|
   end
 end
 
-recipes.each do |sub_array|
-  sub_array.each_with_index do |ingredient, index|
-    puts "An ingredient for recipe of index: #{index} is: #{ingredient}"
-  end
-end
 
 
 # 11. ITERATING OVER A HASH
