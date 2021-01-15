@@ -6,6 +6,9 @@ names = ["Jenny", "Peter", "Zoe", "Jessica"]
 puts names[0]
 # Jenny
 
+puts names[1]
+# Peter
+
 
 
 # 2. ADDING AN ELEMENT TO AN ARRAY
@@ -101,6 +104,7 @@ posts.delete("post1")
 
 p posts
 # ["post2", "post3"]
+# careful, this will delete EVERY element with the value "post1"
 
 
 
