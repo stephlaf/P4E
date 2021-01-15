@@ -1,3 +1,20 @@
+puts "hello"     # <= This will not show the ""
+p "hello"        # <= This WILL show the ""
+
+# p is used for debugging. It is a shortcut for adding ".inspect"
+
+puts "hello".inspect      # <=   same as using: p "hello"
+
+
+# We will use p to display arrays with brackets instead of puts which does not show brackets.
+my_array = [1, 2, 3]
+
+p my_array
+# [1, 2, 3, 4]
+
+
+
+
 #1. ACCESSING AN ELEMENT FROM AN ARRAY
 
 names = ["Jenny", "Peter", "Zoe", "Jessica"]
