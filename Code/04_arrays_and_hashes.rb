@@ -163,6 +163,7 @@ puts restaurant_menu["Pizza"]
 # 10€
 
 
+
 # 6. ADDING A KEY-VALUE PAIR TO A HASH
 
 # add a new dish + price to the menu
@@ -194,6 +195,7 @@ restaurant_menu.delete("Pizza")
 
 puts restaurant_menu
 # {"Pasta"=>"12€", "Steak"=>"18€"}
+
 
 
 # 8. UPDATING A KEY-VALUE PAIR FROM A HASH
