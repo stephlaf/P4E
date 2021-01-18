@@ -54,6 +54,7 @@ end
 
 # Call your method by calling its name:
 greeting
+# => "Hello!"
 
 
 
