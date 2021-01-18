@@ -38,7 +38,7 @@ puts "John" <=> "Zack"
 # -1 because John is before Zack
 
 puts "John" <=> "Anne"
-# 1 because John is after Zack
+# 1 because John is after Anne
 
 puts "John" <=> "John"
 # 0 because they are the same.
