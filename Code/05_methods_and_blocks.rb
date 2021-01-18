@@ -173,7 +173,7 @@ double(3)
 double(4)
 double(5)
 double(6)
-# ^Calling the method 6 times
+# ^Calling the method 6 times with 1 argument.
 
 
 # Or use both:
@@ -184,8 +184,8 @@ def double(*numbers)
   end
 end
 
-double(1, 2, 3, 4, 5, 6)
-# ^Calling the method
+double(1, 2, 3, 4, 5, 6, 7, 8, 9)
+# ^Calling the method with as many arguments as I want
 
 
 
