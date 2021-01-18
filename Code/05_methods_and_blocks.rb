@@ -115,17 +115,28 @@ puts what_is_returned  # =>  "The method will return this string here!"
 
 
 
+
 ########################################################
 #5. SPLAT
 
 
-def what_up(*friends) # Splat (*) turns the friends parameter into an array
+def list(*friends) # Splat (*) turns the friends parameter into an array
+  p friends
+end
+
+list("Pascal", "Anne", "Marc-Andre")
+
+# Will display in terminal: ["Pascal", "Anne", "Marc-Andre"]
+
+
+
+def whats_up(*friends) # Splat (*) turns the friends parameter into an array
   friends.each do |friend| 
     puts "What's up, #{friend}!" 
   end
 end
 
-what_up("Pascal", "Anne", "Marc-Andre")
+whats_up("Pascal", "Anne", "Marc-Andre")
 # "What's up Pascal"
 # "What's up Anne"
 # "What's up Marc-Andre"
@@ -136,6 +147,7 @@ what_up("Pascal", "Anne", "Marc-Andre")
 # def what_up(*friends)
 #   friends.each { |friend| puts "What's up, #{friend}!" }
 # end
+
 
 
 
