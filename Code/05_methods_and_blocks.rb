@@ -62,8 +62,9 @@ def my_method(x, y) # parameters
   puts x * y
 end
 
+# Calling method: 
 my_method(2, 6) # arguments
-# puts 12
+# => 12
 
 
 
