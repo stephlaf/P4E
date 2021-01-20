@@ -91,7 +91,20 @@ meals = {
   dinner: "lasagna"
 }
 
+
+# R. Read
+
 puts breakfast_food = my_hash[:breakfast]
+
+
+# U. Update
+
+meals[:breakfast] = "Muesli"  
+
+
+# D. Delete
+
+meals.delete(:snack)
 
 
 
