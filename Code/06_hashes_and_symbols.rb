@@ -138,6 +138,8 @@ high_grades = grades.select do |student, grade|
   grade > 90
 end
 
+puts high_grades
+
 
 
 
