@@ -132,7 +132,7 @@ puts teacher_a
 # => Nawel
 
 
-puts unassigned_variable
+p unassigned_variable
 # => nil
 # unassigned variable is nil by default
 
