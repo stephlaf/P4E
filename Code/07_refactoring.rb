@@ -28,6 +28,8 @@ unless age >= 18
     puts "You can't vote"
 end
 
+# Better:
+
 puts "You can't vote" unless age >= 18
 
 
@@ -45,6 +47,8 @@ else
     puts "You didn't score"
 end
 
+
+# Better:
 
 puts goal ? "You scored!" : "You didn't score"
 
@@ -106,7 +110,7 @@ def sum(a, b)
   a + b
 end
 
-puts sum(2,3)
+puts sum(2, 3)
 
 
 
@@ -128,12 +132,12 @@ puts teacher_a
 # => Nawel
 
 
-puts variable
+puts unassigned_variable
 # => nil
 # unassigned variable is nil by default
 
-variable ||= "default string if variable is not nil"
-puts variable
+unassigned_variable ||= "default string if variable is not nil"
+puts unassigned_variable
 # => "default string"
 
 
@@ -147,16 +151,20 @@ puts password
 
 #6. UPTO AND DOWNTO
 
+
+#Using a range 1..10:
+
 for num in 1..10
     puts num
 end
 
 
-#This will count up to 10:
+#Using .upto - this will count up to 10:
 
 1.upto(10) { |num| puts num }
 
-#This will count down from 10:
+
+#Using .downto - this will count down from 10:
 
 10.downto(1) { |num| puts num }
 
@@ -191,6 +199,7 @@ p my_array
 my_new_array = ["one", "two", "three"]
 
 my_new_array.push("four")
+
 
 my_new_array << "five"
 
