@@ -132,20 +132,15 @@ puts teacher_a
 # => Nawel
 
 
-p unassigned_variable
-# => nil
-# unassigned variable is nil by default
-
-unassigned_variable ||= "default string if variable is not nil"
-puts unassigned_variable
-# => "default string"
-
-
 password = "unicorn"
 password ||= "password"
 puts password
 # => "unicorn"
 
+
+unassigned_variable ||= "default string if variable is nil"
+puts unassigned_variable
+# => "default string if variable is nil"
 
 
 
