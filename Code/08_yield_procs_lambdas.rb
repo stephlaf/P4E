@@ -262,6 +262,7 @@ p selected_numbers
 # LAMBDA CARING ABOUT THE NUMBER OF ARGUMENTS IT GETS:
 
 my_lamba = lambda { |x, y| puts "Displaying #{x} and #{y}" }
+
 my_lamba.call(2, 5)
 # "Displaying 2 and 5"
 
@@ -272,11 +273,12 @@ my_lamba.call(2, 5)
 # PROC NOT CARING ABOUT THE NUMBER OF ARGUMENTS IT GETS:
 
 my_proc = proc { |x, y| puts "Displaying #{x} and #{y}" }
+
 my_proc.call
 # "Displaying   and  "
 
 # No error
-# x and y become  nil  if no arguments are passed
+# parameters become  nil  if no arguments are passed
 
 
 
