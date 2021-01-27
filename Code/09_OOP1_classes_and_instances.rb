@@ -61,7 +61,7 @@ p new_car
 # puts new_car.inspect
 
 puts new_car.class
-# class = Car
+# Car
 
 
 new_car1 = Car.new("Toyota", "Corola")
