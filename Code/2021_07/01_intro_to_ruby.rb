@@ -1,30 +1,29 @@
 # Welcome to P4E! 🥳
 
 # 1. Data Types
-# Strings
+# String
 "Hello World"
 "Happy to be here"
 "Anything, really"
 
-# Numbers
-# Integers
+# Number
+# Integer
 10
 2
 23456
 
-# Floats
+# Float
 3.14
 20.5
 68.0
 
-# Booleans
+# Boolean
 true
 false
 
 # 2. Puts and Print -> to display in the console
 print "Hello World" # no line return
 puts "Happy to be here" # adds a line return
-puts "Anything, really"
 
 # 3. Math
 # Addition
@@ -49,18 +48,18 @@ puts "Anything, really"
 
 # 4. Variables
 name = "Alex"
-puts name # returns "Alex"
+puts name # "Alex"
 
 age = 34
-puts age + 1 # returns 35
-puts age # returns 34
+puts age + 1 # 35
+puts age # 34
 
 # Reassigning a value to a variable
 age = age + 1
-puts age # returns 35
+puts age # 35
 
 # Shortcut to increment
-age += 1 # returns 36
+age += 1 # 36
 
 # Naming convention in Ruby -> lower_snake_case
 name
