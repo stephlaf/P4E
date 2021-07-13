@@ -12,8 +12,9 @@ if 10 > 20
   puts "This code will not run because it is false!"
 end
 
-correct_password = "Unicorn"
-puts "Please enter your password"
+correct_password = "Password1234"
+puts "What is your password?"
+print "> "
 entered_password = gets.chomp
 
 if entered_password == correct_password
@@ -34,14 +35,15 @@ else
   puts "This code will run instead"
 end
 
-correct_password = "Unicorn"
-puts "Please enter your password"
+correct_password = "Password1234"
+puts "What is your password?"
+print "> "
 entered_password = gets.chomp
 
 if entered_password == correct_password
   puts "You are logged in!"
 else
-  puts "You have entered the wrong password"
+  puts "This is the wrong password."
 end
 
 # 3. ELSIF
@@ -58,8 +60,9 @@ end
 
 # 4. UNLESS
 
-correct_password = "Unicorn"
-puts "Please enter your password"
+correct_password = "Password1234"
+puts "What is your password?"
+print "> "
 entered_password = gets.chomp
 
 unless correct_password == entered_password
@@ -111,18 +114,25 @@ puts x <= y
 # false && false => false
 # All conditions have to be true for it to return true
 
-correct_username = "Star"
-puts "Please enter your username"
+username = "potato123"
+password = "pineapple!"
+
+puts "What is your username?"
+print "> "
 entered_username = gets.chomp
 
-correct_password = "Unicorn"
-puts "Please enter your password"
+puts "What is your password?"
+print "> "
 entered_password = gets.chomp
 
-if correct_username == entered_username && correct_password == entered_password
+if username == entered_username && password == entered_password
   puts "You are logged in!"
+elsif username == entered_username && password != entered_password
+  puts "This is the wrong password."
+elsif username != entered_username && password == entered_password
+  puts "This is the wrong username."
 else
-  puts "You are not logged in, wrong credentials"
+  puts "You have the wrong credentials."
 end
 
 # ||  (OR)
@@ -132,14 +142,12 @@ end
 # false || false => false
 # At least one condition has to be true for it to return true
 
-time = 6
+time = 3
 
-if time > 12 || time == 24
-  puts "It's after noon or midnight"
-elsif time < 12
-  puts "It's before noon"
+if time > 21 || time < 7
+  puts "I am asleep right now 🌝"
 else
-  puts "It's noon"
+  puts "I am awake! 🌞"
 end
 
 # Using both boolean operators
@@ -202,32 +210,33 @@ end
 # 8. NESTING CONTROL STATEMENTS
 # You can put 'if' statements inside other 'if' statements, etc. Just be sure to focus on your indentation to avoid confusion!
 
-correct_username = "John Smith"
-correct_password = "John's Password"
+username = "potato123"
+password = "pineapple!"
 
 puts "What is your username?"
+print "> "
 entered_username = gets.chomp
 
 puts "What is your password?"
+print "> "
 entered_password = gets.chomp
 
-if entered_username == correct_username && entered_password == correct_password
-  puts "Welcome #{correct_username}!"
+if username == entered_username && password == entered_password
+  puts "Welcome, #{username}!"
   puts "Do you want to change your password?"
+  print "> "
   answer = gets.chomp
 
   if answer == "yes"
-    # The 'if' statement is indented because it is INSIDE the other 'if' statement.
-    puts "What will be your new password?"
-    new_password = gets.chomp
-    correct_password = new_password
-    puts "This is your new password: #{correct_password}"
+    puts "Enter your new password"
+    password = gets.chomp
+    puts "Your new password is #{password}"
   elsif answer == "no"
-    puts "Ok, we will not change your password"
+    puts "We will not change your password."
   else
-    puts "Unknown reply"
+    puts "This option does not exist"
   end
 
 else
-  puts "Wrong Password"
+  puts "You have the wrong credentials."
 end
