@@ -4,7 +4,7 @@
 
 number = 1
 
-while number < 11
+while number <= 10
   puts number
   number += 1  # (same as: number = number + 1)
 end
@@ -14,7 +14,7 @@ end
 
 number = 1
 
-until number == 11
+until number > 10
   puts number
   number += 1
 end
@@ -26,7 +26,7 @@ end
 
 number = 1
 
-until number == 11
+until number > 10
   puts number
 end
 
@@ -47,8 +47,8 @@ end
 
 # NEXT used in FOR loop
 
-for number in 1..5
-  next if number % 2 == 0
+for number in 1..10
+  next if number % 2 == 0 # is the same as number.even?
   puts number
 end
 # => Skips the even numbers
@@ -74,28 +74,26 @@ end
 number = 1
 
 loop do
-  break if number > 5
   puts number
   number += 1
+  break if number > 10
 end
-# => displays 1 to 5
+# => displays 1 to 10
 
 # 5. Iterator: EACH
 
-numbers = [1, 2, 3, 4, 5, 6]
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 numbers.each do | num |
-  puts "This is my number!"
   puts num
-  puts "Thanks!"
 end
-# => displays 1 to 6
+# => displays 1 to 10
 
 # Block on one line
 numbers = [2, 1, 5, 6, 3, 8]
 
 numbers.each { |num| puts num }
-# => displays 2, 1, 5, 6, 3, 8 in order it is written (does not sort)
+# => displays 2, 1, 5, 6, 3, 8 in order it is stored in the array (does not sort)
 
 # 6. Iterator: TIMES
 
@@ -104,12 +102,11 @@ numbers.each { |num| puts num }
 end
 # => displays "Around The World" 30 times
 
-
-counter = 1
+number = 1
 
 10.times do
-  puts counter
-  counter += 1
+  puts number
+  number += 1
 end
 # => displays 1 to 10
 
@@ -125,56 +122,56 @@ end
 
 ## WHILE ##
 
-counter = 1
+number = 1
 
-while counter <= 3
-  puts "#{counter}- Testing 'while'"
-  counter += 1
+while number <= 3
+  puts "#{number}- Testing 'while'"
+  number += 1
 end
 
 ## UNTIL ##
 puts "======="
 
-counter = 1
+number = 1
 
-until counter == 4
-  puts "#{counter}- Testing 'until'"
-  counter += 1
+until number > 3
+  puts "#{number}- Testing 'until'"
+  number += 1
 end
 
 ## FOR ##
 puts "======="
 
-for num in 1..3
-  puts "#{num}- Testing 'for'"
+for number in 1..3
+  puts "#{number}- Testing 'for'"
 end
 
 ## LOOP ##
 puts "======="
 
-counter = 1
+number = 1
 
 loop do
-  puts "#{counter}- Testing 'loop'"
-  counter += 1
-  break if counter == 4
+  puts "#{number}- Testing 'loop'"
+  number += 1
+  break if number > 3
 end
 
 ## EACH ##
 puts "======="
 
-[1, 2, 3].each do |num|
-  puts "#{num}- Testing '.each'"
+[1, 2, 3].each do |number|
+  puts "#{number}- Testing '.each'"
 end
 
 ## TIMES ##
 puts "======="
 
-counter = 1
+number = 1
 
 3.times do
-  puts "#{counter}- Testing '.times'"
-  counter += 1
+  puts "#{number}- Testing '.times'"
+  number += 1
 end
 
 ####################
