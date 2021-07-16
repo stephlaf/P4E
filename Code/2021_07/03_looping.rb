@@ -30,6 +30,16 @@ until number > 10
   puts number
 end
 
+#or
+
+number = 0
+
+until number > 10
+  number = 1
+  puts number
+  number += 1
+end
+
 # This will loop forever because the number will never equal 11
 # Use Ctrl+C to interrupt in the terminal, otherwise your computer might crash
 
@@ -82,9 +92,16 @@ end
 
 # 5. Iterator: EACH
 
+# With an array:
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 numbers.each do | num |
+  puts num
+end
+# => displays 1 to 10
+
+# With a range:
+(1..10).each do | num |
   puts num
 end
 # => displays 1 to 10
@@ -114,72 +131,10 @@ end
 ########### EXAMPLES ##########
 ###############################
 
+# Login example with UNTIL:
 
-# I want to do the same thing using all of them:
-# 1- "Testing ____"
-# 2- "Testing ____"
-# 3- "Testing ____"
-
-## WHILE ##
-
-number = 1
-
-while number <= 3
-  puts "#{number}- Testing 'while'"
-  number += 1
-end
-
-## UNTIL ##
-puts "======="
-
-number = 1
-
-until number > 3
-  puts "#{number}- Testing 'until'"
-  number += 1
-end
-
-## FOR ##
-puts "======="
-
-for number in 1..3
-  puts "#{number}- Testing 'for'"
-end
-
-## LOOP ##
-puts "======="
-
-number = 1
-
-loop do
-  puts "#{number}- Testing 'loop'"
-  number += 1
-  break if number > 3
-end
-
-## EACH ##
-puts "======="
-
-[1, 2, 3].each do |number|
-  puts "#{number}- Testing '.each'"
-end
-
-## TIMES ##
-puts "======="
-
-number = 1
-
-3.times do
-  puts "#{number}- Testing '.times'"
-  number += 1
-end
-
-####################
-#  OTHER EXAMPLES  #
-####################
-
-# Login example:
-
+username = "Potato123"
+password = "pineapple!"
 logged_in = false
 
 until logged_in
@@ -192,44 +147,31 @@ until logged_in
   print "> "
   password = gets.chomp
 
-  if username == "Peter Pan" && password == "Tinkerbell"
+  if username == entered_username && password == entered_password
     puts "You are logged in!"
     logged_in = true
   else
     puts "Wrong credentials"
   end
 
-  puts "============" # This is to help you see when the loop starts over
 end
 
-# Nesting loops:
+# Login example with LOOP:
 
-logged_in = false
-correct_password = false
+username = "Potato123"
+password = "pineapple!"
 
-until logged_in
-  puts "============" # This is to help you see when the loop starts over
+loop do
   puts "What is your username?"
-  print "> "
-  username = gets.chomp
+  entered_username = gets.chomp
 
-  if username == "Peter Pan"
+  puts "What is your password?"
+  entered_password = gets.chomp
 
-    until correct_password
-      puts "============" #This is to help you see when the loop starts over
-      puts "What is #{username}'s password?"
-      print "> "
-      password = gets.chomp
-      if password == "Tinkerbell"
-        puts "You are logged in!"
-        correct_password = true
-        logged_in = true
-      else
-        puts "<!!!> Wrong password <!!!>"
-      end
-    end
-
+  if username == entered_username && password == entered_password
+    puts "You are logged in!"
+    break
   else
-    puts "<!!!> Wrong username <!!!>"
+    puts "You have the wrong credentials"
   end
 end
