@@ -161,7 +161,7 @@ end
 username = "Potato123"
 password = "pineapple!"
 
-loop do
+loop do # it will loop until we use the keyword 'break'
   puts "What is your username?"
   entered_username = gets.chomp
 
@@ -170,7 +170,7 @@ loop do
 
   if username == entered_username && password == entered_password
     puts "You are logged in!"
-    break
+    break # it breaks the loop because now we're logged in
   else
     puts "You have the wrong credentials"
   end
