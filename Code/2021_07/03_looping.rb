@@ -30,7 +30,7 @@ until number > 10
   puts number
 end
 
-#or
+# or
 
 number = 0
 
@@ -40,7 +40,7 @@ until number > 10
   number += 1
 end
 
-# This will loop forever because the number will never equal 11
+# This will loop forever because the number will NEVER be greater than 10!
 # Use Ctrl+C to interrupt in the terminal, otherwise your computer might crash
 
 # 3. FOR
@@ -95,13 +95,13 @@ end
 # With an array:
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-numbers.each do | num |
+numbers.each do |num|
   puts num
 end
 # => displays 1 to 10
 
 # With a range:
-(1..10).each do | num |
+(1..10).each do |num|
   puts num
 end
 # => displays 1 to 10
@@ -137,7 +137,7 @@ username = "Potato123"
 password = "pineapple!"
 logged_in = false
 
-until logged_in
+until logged_in # it will loop as long as 'logged_in' is false
 
   puts "What is your username?"
   print "> " # 'Print' does not put a new line, so this will be on the same line as gets.chomp
@@ -149,7 +149,7 @@ until logged_in
 
   if username == entered_username && password == entered_password
     puts "You are logged in!"
-    logged_in = true
+    logged_in = true # this will break the loop by changing the value of logged_in!
   else
     puts "Wrong credentials"
   end
