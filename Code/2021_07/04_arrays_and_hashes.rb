@@ -61,7 +61,7 @@ names.push("Joey")
 p names
 # ["Sarah", "Zoe", "Kayleigh", "Joey"]
 
-#At the beginning
+# At the beginning
 
 my_array = [1, 2, 3]
 
@@ -124,6 +124,15 @@ meals.delete("Pizza")
 p meals
 # ["Pasta", "Steak"]
 # Careful! This will delete EVERY element with the value "Pizza"
+
+# Update an element in the array
+
+meals = ["Pizza", "Pasta", "Steak"]
+
+meals[0] = "Salad"
+
+p meals
+# ["Salad", "Pasta", "Steak"]
 
 # 5. Creating a hash
 
