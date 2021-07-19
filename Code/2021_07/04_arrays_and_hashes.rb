@@ -1,14 +1,17 @@
+# Arrays and Hashes - Module 4
+
 # Using 'p' instead of 'puts'
 
-puts "hello"     # <= This will not show the "" fo the string
+puts "hello"     # <= This will not show the "" of the string
 p "hello"        # <= This WILL show the "" of the string
 
 # p is used for debugging. It is a shortcut for adding ".inspect"
 
 puts "hello".inspect      # <=   same as using: p "hello"
 
-# We will use p to display arrays with brackets instead of puts which does not show brackets.
-my_array = [1, 2, 3]
+# We will use 'p' to display arrays with brackets instead of puts which does not show brackets.
+
+my_array = [1, 2, 3, 4]
 
 p my_array
 # [1, 2, 3, 4]
@@ -27,6 +30,14 @@ puts names[0]
 
 puts names[1]
 # Peter
+
+# First or last element of an array
+
+puts names.first
+# Jenny
+
+puts names.last
+# Jessica
 
 # 3. Add an element to an array
 
@@ -68,51 +79,51 @@ p names
 
 # At a specific index
 
-posts = ["post1", "post2", "post3"]
+meals = ["Pizza", "Pasta", "Steak"]
 
-posts.insert(1, "new_post")
+meals.insert(1, "Salad")
 
-p posts
-# ["post1", "new_post", "post2", "post3"]
+p meals
+# ["Pizza", "Salad", "Pasta", "Steak"]
 
 # 4. Delete an element from the array
 
 # The last element
 
-posts = ["post1", "post2", "post3"]
+meals = ["Pizza", "Pasta", "Steak"]
 
-posts.pop
+meals.pop
 
-p posts
-# ["post1", "post2"]
+p meals
+# ["Pizza", "Pasta"]
 
 # The first element
 
-posts = ["post1", "post2", "post3"]
+meals = ["Pizza", "Pasta", "Steak"]
 
-posts.shift
+meals.shift
 
-p posts
-# ["post2", "post3"]
+p meals
+# ["Pasta", "Steak"]
 
 # At a specific index
 
-posts = ["post1", "post2", "post3"]
+meals = ["Pizza", "Pasta", "Steak"]
 
-posts.delete_at(1)
+meals.delete_at(1)
 
-p posts
-# ["post1", "post3"]
+p meals
+# ["Pizza", "Steak"]
 
 # A specific value
 
-posts = ["post1", "post2", "post3"]
+meals = ["Pizza", "Pasta", "Steak"]
 
-posts.delete("post1")
+meals.delete("Pizza")
 
-p posts
-# ["post2", "post3"]
-# Careful! This will delete EVERY element with the value "post1"
+p meals
+# ["Pasta", "Steak"]
+# Careful! This will delete EVERY element with the value "Pizza"
 
 # 5. Creating a hash
 
@@ -187,7 +198,7 @@ puts restaurant_menu
 pasta_recipe = ["Leek", "Shrimp", "Linguine"]
 
 pasta_recipe.each do |ingredient|
-  puts "One of the main ingredient for this recipe: #{ingredient}"
+  puts "One of the main ingredients for this recipe: #{ingredient}"
 end
 
 # 11. Iterating over a multi-dimensional array
