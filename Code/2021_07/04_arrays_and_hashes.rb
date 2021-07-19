@@ -20,216 +20,168 @@ p my_array
 
 empty_array = []
 
-names = ["Jenny", "Peter", "Zoe", "Jessica"]
-# index =>   0  ,   1    ,   2   ,    3
+names = ["Caroline", "Hopemarie", "All", "Sarah", "Gustavo"]
+# index =>   0     ,      1     ,   2   ,    3  ,     4
 
 # 2. Accessing or reading an element of an array -> with the index
 
 puts names[0]
-# Jenny
+# Caroline
 
 puts names[1]
-# Peter
+# Hopemarie
 
 # First or last element of an array
 
 puts names.first
-# Jenny
+# Caroline
 
 puts names.last
-# Jessica
+# Gustavo
 
 # 3. Add an element to an array
 
-my_array = [1, 2, 3]
-
 # At the end
 
-my_array.push(4)
-
-my_array << 5
-
-p my_array
-# [1, 2, 3, 4, 5]
-
-names = ["Sarah", "Zoe"]
-
-names << "Kayleigh"
-
-names.push("Joey")
-
+names.push("Saadia") # you can add more than one element
+names << "Sakshi" # the 'shovel' way!
 p names
-# ["Sarah", "Zoe", "Kayleigh", "Joey"]
+# ["Caroline", "Hopemarie", "All", "Sarah", "Gustavo", "Saadia", "Sakshi"]
 
 # At the beginning
 
-my_array = [1, 2, 3]
-
-my_array.unshift(0)
-
-p my_array
-# [0, 1, 2, 3]
-
-names = ["Sarah", "Zoe"]
-
-names.unshift("Kayleigh")
-
+names.unshift("Jenny")
 p names
-# ["Kayleigh", "Sarah", "Zoe"]
+# ["Jenny", "Caroline", "Hopemarie", "All", "Sarah", "Gustavo", "Saadia", "Sakshi"]
 
 # At a specific index
 
-meals = ["Pizza", "Pasta", "Steak"]
-
-meals.insert(1, "Salad")
-
-p meals
-# ["Pizza", "Salad", "Pasta", "Steak"]
+names.insert(2, "Wy")
+p names
+# ["Jenny", "Caroline", "Wy", "Hopemarie", "All", "Sarah", "Gustavo", "Saadia", "Sakshi"]
 
 # 4. Delete an element from the array
 
-# The last element
-
 meals = ["Pizza", "Pasta", "Steak"]
 
-meals.pop
+# The last element
 
+meals.pop
 p meals
 # ["Pizza", "Pasta"]
 
 # The first element
 
-meals = ["Pizza", "Pasta", "Steak"]
-
 meals.shift
-
 p meals
 # ["Pasta", "Steak"]
 
 # At a specific index
 
-meals = ["Pizza", "Pasta", "Steak"]
-
 meals.delete_at(1)
-
 p meals
 # ["Pizza", "Steak"]
 
 # A specific value
 
-meals = ["Pizza", "Pasta", "Steak"]
-
 meals.delete("Pizza")
-
 p meals
 # ["Pasta", "Steak"]
 # Careful! This will delete EVERY element with the value "Pizza"
 
-# Update an element in the array
+# 5. Update an element in the array
 
 meals = ["Pizza", "Pasta", "Steak"]
 
 meals[0] = "Salad"
-
 p meals
 # ["Salad", "Pasta", "Steak"]
 
-# 5. Creating a hash
+# 6. Creating a hash
 
 # For example: a restaurant menu to display the dishes + prices
 
 restaurant_menu = {
-  "Pizza" => "$10",
-  "Pasta" => "$12",
-  "Steak" => "$18"
+  "Pizza" => 10,
+  "Pasta" => 12,
+  "Steak" => 18
 }
 
 p restaurant_menu
-# {"Pizza"=>"$10", "Pasta"=>"$12", "Steak"=>"$18"}
+# {"Pizza"=>10, "Pasta"=>12, "Steak"=>18}
+
+# A value can also be a collection of items! You could use an array in this case
+# For example: "Pizza" => ["small", "medium", "large"]
 
 # Creating an empty hash
 restaurant_menu = Hash.new
 # or
 restaurant_menu = {}
 
-# 6. Accessing or reading a value
+# 7. Accessing or reading a value
 
 restaurant_menu = {
-  "Pizza" => "$10",
-  "Pasta" => "$12",
-  "Steak" => "$18"
+  "Pizza" => 10,
+  "Pasta" => 12,
+  "Steak" => 18
 }
 
 puts restaurant_menu["Pizza"]
-# $10
+# 10
 
-# 7. Adding a key-value pair to a hash
+# 8. Adding a key-value pair to a hash
 
-restaurant_menu = {
-  "Pizza" => "$10",
-  "Pasta" => "$12",
-  "Steak" => "$18"
-}
+restaurant_menu["Fish"] = 15
 
-restaurant_menu["Fish"] = "$15"
+p restaurant_menu
+# {"Pizza"=>10, "Pasta"=>12, "Steak"=>18, "Fish"=>15}
 
-puts restaurant_menu
-# {"Pizza"=>"$10", "Pasta"=>"$12", "Steak"=>"$18", "Fish"=>"$15"}
-
-# 8. Delete a key-value pair from a hash
-
-restaurant_menu = {
-  "Pizza" => "$10",
-  "Pasta" => "$12",
-  "Steak" => "$18"
-}
+# 9. Delete a key-value pair from a hash
 
 restaurant_menu.delete("Pizza")
 
-puts restaurant_menu
-# {"Pasta"=>"$12", "Steak"=>"$18"}
+p restaurant_menu
+# {"Pasta"=>12, "Steak"=>18, "Fish"=>15}
 
-# 9. Update a value
+# 10. Update a value
 
-restaurant_menu = {
-  "Pizza" => "$10",
-  "Pasta" => "$12",
-  "Steak" => "$18"
-}
+restaurant_menu["Pizza"] = 11
 
-restaurant_menu["Pizza"] = "$11"
+p restaurant_menu
+# {"Pizza"=>11, "Pasta"=>12, "Steak"=>18, "Fish"=>15}
 
-puts restaurant_menu
-# {"Pizza"=>"$11", "Pasta"=>"$12", "Steak"=>"$18"}
+# 11. Iterating over an array
 
-# 10. Iterating over an array
-
-pasta_recipe = ["Leek", "Shrimp", "Linguine"]
+pasta_recipe = ["Cream", "Shrimp", "Linguine"]
 
 pasta_recipe.each do |ingredient|
   puts "One of the main ingredients for this recipe: #{ingredient}"
 end
+# One of the main ingredients for this recipe: Cream
+# One of the main ingredients for this recipe: Shrimp
+# One of the main ingredients for this recipe: Linguine
 
-# 11. Iterating over a multi-dimensional array
+# 12. Iterating over a multi-dimensional array
 
-recipes = [["Leek", "Shrimp", "Linguine"],["Apple", "Pear", "Cheese"]]
+recipes = [["Cream", "Shrimp", "Linguine"],["Apple", "Pear", "Cheese"]]
 
 recipes.each do |recipe|
   recipe.each do |ingredient|
     puts "An ingredient for this recipe: #{ingredient}"
   end
 end
+# Try this one at home to see the result!
 
-# 12. Iterating over an hash
+# 13. Iterating over an hash
 
 restaurant_menu = {
-  "Pizza" => "$10",
-  "Pasta" => "$12",
-  "Steak" => "$18"
+  "Pizza" => 10,
+  "Pasta" => 12,
+  "Steak" => 18
 }
 
 restaurant_menu.each do |meal, price|
-  puts "#{meal} price is #{price}"
+  puts "#{meal} price is $#{price}"
 end
 
 # Pizza price is $10
