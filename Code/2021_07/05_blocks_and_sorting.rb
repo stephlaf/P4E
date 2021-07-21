@@ -63,12 +63,12 @@ my_method(2, 6) # arguments
 # => 12
 
 def greet(name)
-  puts "Hello #{name}"
+  puts "Hello #{name}!"
 end
 
-greet "Anne Marie"
-greet "Noemie"
-greet "Sarah"
+greet("Anne Marie")
+greet("Noemie")
+greet("Sarah")
 
 ########################################################
 # 4. RETURNING
@@ -96,12 +96,8 @@ def test_method
   puts "This line of code will not run."
 end
 
-test_method
-# Calling the method
-
-what_is_returned = test_method # < calling the method again
-
-puts what_is_returned  # =>  "The method will return this string here!"
+puts test_method
+# displays "The method will return this string here!"
 
 ########################################################
 #5. SPLAT
@@ -121,9 +117,9 @@ def whats_up(*friends) # Splat (*) turns the friends parameter into an array
 end
 
 whats_up("Pascal", "Anne", "Marc-Andre")
-# "What's up Pascal"
-# "What's up Anne"
-# "What's up Marc-Andre"
+# "What's up Pascal!"
+# "What's up Anne!"
+# "What's up Marc-Andre!"
 
 # Same as:
 
