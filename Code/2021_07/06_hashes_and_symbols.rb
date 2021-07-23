@@ -205,3 +205,11 @@ end
 
 # the variable 'student' represents a key, which is a symbol.
 # so this is like doing grades[:jessica], grades[:sarah], etc.
+
+# Codecademy exercise:
+# We have an array of strings we’d like to later use as hash keys, but we’d rather they be symbols.
+strings = ["HTML", "CSS", "JavaScript", "Python", "Ruby"]
+# Create a new variable, symbols, and store an empty array in it.
+# Use .each to iterate over the strings array.
+# For each s in strings, use .to_sym to convert s to a symbol and use .push to add that new symbol to symbols.
+# Print the symbols array.
