@@ -1,4 +1,4 @@
-# Hashed and Symbols - Module 6
+# Hashes and Symbols - Module 6
 
 # 1. HASHES RECAP
 
