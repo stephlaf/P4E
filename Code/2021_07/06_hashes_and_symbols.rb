@@ -1,5 +1,6 @@
-################################
-#1. HASHES RECAP
+# Hashed and Symbols - Module 6
+
+# 1. HASHES RECAP
 
 # C.R.U.D:
 
@@ -10,15 +11,20 @@
 
 # C. Create a hash:
 
-meals = {
-  "breakfast" => "bacon and eggs",
-  "lunch" => "chicken soup",
-  "snack" => "chocolate cookies",
-  "dinner" => "lasagna"
-}
+new_hash = {}
+
 # or
 
 new_hash = Hash.new
+
+#or
+
+meals = {
+  "breakfast" => "bacon and eggs",
+  "lunch" => "pasta",
+  "snack" => "dill pickle chips",
+  "dinner" => "Steak and salad"
+}
 
 # R. Read a hash
 
@@ -33,7 +39,7 @@ meals["breakfast"] = "Muesli"
 meals.delete("snack")
 
 ################################
-#2. CONVERT SYMBOL TO STRING
+# 2. CONVERT SYMBOL TO STRING
 
 my_symbol = :breakfast
 
@@ -42,18 +48,17 @@ my_string = my_symbol.to_s
 p my_string
 # => "breakfast"
 
-
 my_string = "Hello"
 
 my_symbol = my_string.to_sym
 
 p my_symbol
-# => :hello
+# => :Hello
 
 ################################
-#3. SYMBOLS AS KEYS
+# 3. SYMBOLS AS KEYS
 
-#String as keys:
+# String as keys:
 
 meals = {
   "breakfast" => "bacon and eggs",
@@ -61,8 +66,6 @@ meals = {
   "snack" => "chocolate cookies",
   "dinner" => "lasagna"
 }
-
-puts breakfast_food = meals["breakfast"]
 
 #Symbols as keys (old way):
 
@@ -73,16 +76,14 @@ meals = {
   :dinner => "lasagna"
 }
 
-puts breakfast_food = meals[:breakfast]
-
 # RUBY NEW SYNTAX:
 
 #Symbols as keys (correct way):
 
 meals = {
-  breakfast: "Bacon and Eggs",
-  lunch: "Chicken soup",
-  snack: "Chocolate cookies",
+  breakfast: "bacon and eggs",
+  lunch: "chicken soup",
+  snack: "chocolate cookies",
   dinner: "lasagna"
 }
 
@@ -92,39 +93,27 @@ puts breakfast_food = meals[:breakfast]
 
 # U. Update
 
-meals[:breakfast] = "Muesli"
+meals[:breakfast] = "muesli"
 
 # D. Delete
 
 meals.delete(:snack)
 
 ################################
-#4. SETTING DEFAULT VALUES
+# 4. SETTING DEFAULT VALUES
 
-my_hash = Hash.new("Eat whatever you want!")
+meals = Hash.new("Eat whatever you want!")
+meals[:breakfast] = "Cereal"
+meals[:lunch] = "Pasta"
 
-my_hash[:meal1] = "Pizza"
-my_hash[:meal2] = "Sushi"
-my_hash[:meal3] = "Hot Dogs"
+p meals
+# => {:breakfast=>"Cereal", :lunch=>"Pasta"}
 
-puts my_hash
-# It will look like this:
-# {
-#   meal1: "Pizza",
-#   meal2: "Sushi",
-#   meal3: "Hot Dogs"
-# }
-
-puts my_hash[:meal1]  # "Pizza"
-puts my_hash[:meal2]  # "Sushi"
-puts my_hash[:meal3]  # "Hot Dogs"
-
-puts my_hash[:meal4]  # "Eat whatever you want!"
-puts my_hash[:mealX]  # "Eat whatever you want!"
-puts my_hash[:asdfghj]  # "Eat whatever you want!"
+p meals[:late_night_snack]
+# => "Eat whatever you want!"
 
 ################################
-#5. SELECTING FROM HASH
+# 5. SELECTING FROM HASH
 
 grades = {
   jessica: 98,
@@ -203,13 +192,38 @@ grades.each do |student, grade|
   grades[student] = grade + 1
 end
 
-# the variable 'student' represents a key, which is a symbol.
-# so this is like doing grades[:jessica], grades[:sarah], etc.
+# Add a new key-value pair to the hash
 
-# Codecademy exercise:
+grades = {
+  jessica: 98,
+  peter: 30,
+  john: 99,
+  sarah: 86
+}
+
+puts "What is the name of the student?"
+student = gets.chomp.to_sym
+
+puts "What is the grade?"
+grade = gets.chomp.to_i
+
+grades[student] = grade
+
+################################
+# Codecademy exercise, line by line:
+
 # We have an array of strings we’d like to later use as hash keys, but we’d rather they be symbols.
 strings = ["HTML", "CSS", "JavaScript", "Python", "Ruby"]
+
 # Create a new variable, symbols, and store an empty array in it.
+symbols = []
+
 # Use .each to iterate over the strings array.
 # For each s in strings, use .to_sym to convert s to a symbol and use .push to add that new symbol to symbols.
+
+strings.each do |s| # 's' here will represent each language included in the 'strings' array
+  symbols.push(s.to_sym) # we push/add the value of 's', converted to a symbol, to the symbols array
+end
+
 # Print the symbols array.
+print symbols
