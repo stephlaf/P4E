@@ -6,7 +6,7 @@ Methods and blocks are the behaviors, what we tell the objects to do. The logic.
 Object Oriented Programming helps people organize their programs by creating their own Objects with their own set of rules/methods/behaviors.
 "
 
-#1. RUBY BUILT-IN CLASSES
+# 1. RUBY BUILT-IN CLASSES
 
 puts "John".class
 # => String
@@ -37,7 +37,7 @@ puts false.class
 
 # All of these are examples classes built into ruby.
 
-#2. CREATING OUR OWN CLASSES (OBJECT-ORIENTED PROGRAMMING!)
+# 2. CREATING OUR OWN CLASSES (OBJECT-ORIENTED PROGRAMMING!)
 
 class Car
   def initialize(make, model)
@@ -64,7 +64,7 @@ puts your_car.class
 
 # The initialize method is the method that runs when we create a new instance of a Class
 
-#3. CREATING OUR OWN METHODS FOR OUR CUSTOM CLASSES
+# 3. CREATING OUR OWN METHODS FOR OUR CUSTOM CLASSES
 
 class Person
   def initialize(name)
@@ -120,7 +120,7 @@ bloody_caesar.basics
 
 puts bloody_caesar.class
 
-#4. SCOPING
+# 4. SCOPING
 
 variable = "This variable is global because it is assigned outside of a class or method"
 # Global variable
@@ -168,7 +168,7 @@ joe.current_user
 joe.of_legal_age?
 # false
 
-#5. INHERITANCE
+# 5. INHERITANCE
 
 class Teacher
   def initialize(name, surname)
@@ -184,13 +184,11 @@ stef = Teacher.new("Stef", "L")
 
 p stef
 
-puts "-------"
-
 anne_marie = TA.new("Anne-Marie", "N")
 
 p anne_marie
 
-#6. OVERRIDING INHERITANCE
+# 6. OVERRIDING INHERITANCE
 
 class Teacher
   def initialize(name, surname)
@@ -218,7 +216,7 @@ anne_marie = TA.new("Anne-Marie", "N")
 
 anne_marie.greet
 
-#7. INHERITANCE WITH SUPER
+# 7. INHERITANCE WITH SUPER
 
 class Teacher
   def initialize(name, surname)
