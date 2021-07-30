@@ -55,7 +55,6 @@ cake.bake
 # => "Mixing cake ingredients"
 # => "Cake going into the oven for 40 minutes"
 
-
 # 2. ATTRIBUTE READER
 
 # Reading an attribute by defining a method
@@ -123,7 +122,7 @@ puts teacher.age
 class Teacher
 
   attr_reader :name, :age
-  attr_writer :age, :age
+  attr_writer :name, :age
 
   def initialize(name, age)
     @name = name
@@ -158,10 +157,10 @@ end
 teacher = Teacher.new("Zack", 30)
 p teacher
 
-puts teacher.name = "Tom"
+teacher.name = "Tom"
 puts teacher.name
 
-puts teacher.age = 45
+teacher.age = 45
 puts teacher.age
 
 # 5. BUILT-IN MODULES
