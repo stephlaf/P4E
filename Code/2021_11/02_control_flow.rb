@@ -102,21 +102,28 @@ puts x <= y
 
 # 6. BOOLEAN OPERATORS
 
-# &&  (AND)
+# AND (&&) 
 
 # true && true => true
 # true && false => false
 # false && false => false
 # All conditions have to be true for it to return true
 
-puts 10 == 10 || 10 == 11 || 10 == 12 || 10 == 13
-# => true because at least one condition was true
-
 puts 10 == 10 && 22 == 22 && 20 == 20
 # => true
 
 puts 10 == 10 && 22 == 10
 # => false because 22 is not the same as 10
+
+# OR (||)
+
+# true || true => true
+# true || false => true
+# false || false => false
+
+puts 10 == 10 || 10 == 11 || 10 == 12 || 10 == 13
+# => true because at least one condition was true
+
 
 
 puts "Please input your username"
