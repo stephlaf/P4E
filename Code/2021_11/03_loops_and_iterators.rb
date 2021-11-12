@@ -50,7 +50,6 @@ end
 # to prevent infinite loop, change the variable of number:
 number = 1
 until number > 10
-  number = 1
   puts number
   number += 1
 end
