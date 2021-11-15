@@ -289,7 +289,7 @@ puts "Meal is complete!"
 
 #  # meal  is the KEY => example: "Pasta"
 #  # recipe  is the VALUE (an array) => example: ["Linguine", "Shrimp", "Sauce"]
-#  # We call the .each method to the 'recipe' array=
+#  # We call the .each method to the 'recipe' array
 #  # Displays this:
 
 # Adding Linguine to Pasta...
@@ -306,7 +306,7 @@ puts "Meal is complete!"
 # Make a new array called restaurants
 # Put the hash called italian_restaurant inside
 # and create a new hash as the 2nd element: a place that serves sushi
-# rastaurants is an array with 2 elements (that are both hashes)
+# restaurants is an array with 2 elements (that are both hashes)
 
 restaurants = [italian_resuarant, { "Sushi" => ["Rice", "Fish"] }]
 # array.  index =       0       ,           1
