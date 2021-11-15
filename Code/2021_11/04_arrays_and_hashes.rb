@@ -206,7 +206,7 @@ p restaurant_menu
 
 # Update Pizza:
 
-restaurant_menu["Calzone"] = 9
+restaurant_menu["Pizza"] = 9
 
 p restaurant_menu
 # {"Pizza"=>9, "Pasta"=>12, "Steak"=>18, "Calzone"=>18}
