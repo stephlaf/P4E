@@ -100,7 +100,7 @@ p names
 names.insert(2, "Jerry")
 
 p names
-# ["Jenny", "Jerry", "Ryan", "Ines", "Mohamed", "Chris", "Olga", "Zane"]
+# ["Jenny", "Ryan", "Jerry", "Ines", "Mohamed", "Chris", "Olga", "Zane"]
 
 
 # Change value of an element from the array
