@@ -98,6 +98,8 @@ puts "This person's age is #{person_age}."
 #   return 2020 - year_of_birth
 # end
 
+
+
 def test_method
   return "The method will return this string here!"
   puts "This line of code will not run."
@@ -105,6 +107,7 @@ end
 
 puts test_method
 # displays "The method will return this string here!"
+
 
 
 def approx_age(year_of_birth)
@@ -233,11 +236,11 @@ names.sort { |a, b| b <=> a }
 
 # Sort by the last letter of the name
 
-names = ["Pascal Z", "Noemie F", "Anne A", "Sarah C"]
+names = ["Anne Z", "Noemie F", "Pascal A", "Sarah C"]
 
 # Get the last letter of a string using index:
-p "Pascal Z"[-1]
-# => "Z"
+p "Pascal A"[-1]
+# => "A"
 
 sorted_last_letter = names.sort do |a, b|
   a[-1] <=> b[-1]
@@ -245,4 +248,4 @@ end
 # ^ Compares the last letter of each string to sort them.
 
 p sorted_last_letter
-# ["Anne A", "Sarah C", "Noemie F", "Pascal Z"]
+# ["Pascal A", "Sarah C", "Noemie F", "Anne Z"]
