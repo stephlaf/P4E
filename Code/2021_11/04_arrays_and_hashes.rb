@@ -100,7 +100,7 @@ p names
 names.insert(2, "Jerry")
 
 p names
-# ["Jenny", "Jerry", "Ryan", "Ines", "Mohamed", "Chris", "Olga", "Zane"]
+# ["Jenny", "Ryan", "Jerry", "Ines", "Mohamed", "Chris", "Olga", "Zane"]
 
 
 # Change value of an element from the array
@@ -206,7 +206,7 @@ p restaurant_menu
 
 # Update Pizza:
 
-restaurant_menu["Calzone"] = 9
+restaurant_menu["Pizza"] = 9
 
 p restaurant_menu
 # {"Pizza"=>9, "Pasta"=>12, "Steak"=>18, "Calzone"=>18}
@@ -289,7 +289,7 @@ puts "Meal is complete!"
 
 #  # meal  is the KEY => example: "Pasta"
 #  # recipe  is the VALUE (an array) => example: ["Linguine", "Shrimp", "Sauce"]
-#  # We call the .each method to the 'recipe' array=
+#  # We call the .each method to the 'recipe' array
 #  # Displays this:
 
 # Adding Linguine to Pasta...
@@ -306,7 +306,7 @@ puts "Meal is complete!"
 # Make a new array called restaurants
 # Put the hash called italian_restaurant inside
 # and create a new hash as the 2nd element: a place that serves sushi
-# rastaurants is an array with 2 elements (that are both hashes)
+# restaurants is an array with 2 elements (that are both hashes)
 
 restaurants = [italian_resuarant, { "Sushi" => ["Rice", "Fish"] }]
 # array.  index =       0       ,           1
