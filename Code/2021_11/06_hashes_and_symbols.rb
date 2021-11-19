@@ -225,7 +225,7 @@ p all_grades
 
 
 
-# If we wanted both keys and values we already know the drill, just use .rach
+# If we wanted both keys and values we already know the drill, just use .each
 # Example: add +2 to everyone's grade
 
 students.each do |student, grade|
