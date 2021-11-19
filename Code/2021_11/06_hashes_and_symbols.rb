@@ -27,7 +27,8 @@ meals = {
 
 # R. Read a hash
 
-puts meals["breakfast"]
+p meals["breakfast"]
+# "bacon and eggs"
 
 # U. Update an element from a hash
 
@@ -138,7 +139,7 @@ p meals
 # }
 
 # meals[:snack] doesn't exist,
-# so it will display the default value which we set on line 111
+# so it will display the default value which we set on line 115
 
 p meals[:snack]
 # "Eat whatever you want!"
@@ -158,6 +159,8 @@ students = {
 
 
 # using .each
+
+# create an empty hash called highgrades_with_each
 highgrades_with_each = {}
 
 students.each do |student, grade|
@@ -170,7 +173,7 @@ p highgrades_with_each
 # {:martyn=>99, :ampora=>60, :john=>70}
 
 
-# ### same as: ###
+# ### SAME AS: ###
 
 
 # using .select
@@ -222,7 +225,8 @@ p all_grades
 
 
 
-# If we wanted both keys and values we already know the drill:
+# If we wanted both keys and values we already know the drill, just use .rach
+# Example: add +2 to everyone's grade
 
 students.each do |student, grade|
   students[student] = grade + 2
@@ -233,7 +237,7 @@ p students
 
 
 
-# Get a new key-value pair from user:
+# Get a new key-value pair from user and add it to the hash:
 
 
 # Ask the user for student's name
@@ -258,11 +262,11 @@ p students
 # Convert strings in an array to symbols:
 
 
-strings = ["HTML", "CSS", "JavaScript", "Ruby"]
+array_of_strings = ["HTML", "CSS", "JavaScript", "Ruby"]
 
 symbols = []
 
-strings.each do |string|
+array_of_strings.each do |string|
   # symbol = string.to_sym
   # symbols.push(symbol)
   symbols << string.to_sym
