@@ -1,6 +1,5 @@
 # Arrays and Hashes
 
-
 # Using 'p' instead of 'puts'
 
 puts "hello"     # <= This will NOT show the "" of the string
@@ -110,7 +109,7 @@ names = ["Jenny", "Jerry", "Ryan", "Ines", "Mohamed", "Chris", "Olga", "Zane"]
 # Use the index.
 names[3] = "Solene"
 
-p names 
+p names
 # ["Jenny", "Jerry", "Ryan", "Solene", "Mohamed", "Chris", "Olga", "Zane"]
 
 
@@ -311,7 +310,7 @@ puts "Meal is complete!"
 restaurants = [italian_resuarant, { "Sushi" => ["Rice", "Fish"] }]
 # array.  index =       0       ,           1
 
-# Looks like this: 
+# Looks like this:
 
 p restaurants
 # [{"Pasta"=>["Linguine", "Shrimp", "Sauce"], "Pizza"=>["Dough", "Cheese", "Tomato Sauce"]}, {"Sushi"=>["Rice", "Fish"]}]
@@ -320,9 +319,9 @@ p restaurants
 # I made it look cleaner here for you to see:
 # 2 hashes inside 1 array. Inside the hash, there is a String as a KEY, and an array as a VALUE.
 
-# [ 
+# [
 #   {"Pasta"=>["Linguine", "Shrimp", "Sauce"],
 #    "Pizza"=>["Dough", "Cheese", "Tomato Sauce"]
-#   }, 
+#   },
 #   {"Sushi"=>["Rice", "Fish"]}
 # ]
