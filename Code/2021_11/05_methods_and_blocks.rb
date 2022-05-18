@@ -125,7 +125,7 @@ end
 puts approx_age(1924)
 # 97
 
-puts approx_age(2022) 
+puts approx_age(2022)
 # unborn
 
 
