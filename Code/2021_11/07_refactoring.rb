@@ -77,7 +77,7 @@ elsif language == "CSS"
   puts "Front-end style"
 elsif language == "HTML"
   puts "Skeleton of a website!"
-else 
+else
   puts "Sounds interesting! I hope you like your new language"
 end
 
@@ -102,8 +102,6 @@ when "CSS" then puts "Front-end style"
 when "HTML" then puts "Skeleton of a website!"
 else puts "Sounds interesting!"
 end
-
-
 
 # 4. IMPLICIT RETURN
 
@@ -156,7 +154,7 @@ puts multiply(0, 5) # this will stop the method at line 142
 
 teacher = nil
 teacher = "Solene"
-teacher ||= "Roxanne" 
+teacher ||= "Roxanne"
 # ||= Does not re-assign value that exists
 
 puts teacher

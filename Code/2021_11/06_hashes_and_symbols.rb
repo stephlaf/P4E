@@ -39,7 +39,6 @@ meals["breakfast"] = "Pancakes"
 meals.delete("snack")
 
 
-
 ################################
 # 2. CONVERT SYMBOL TO STRING
 
@@ -71,9 +70,9 @@ meals = {
   "snack" => "chocolate cookies",
   "dinner" => "lasagna"
 }
-  
+
 # Symbols as keys (old way):
-  
+
 meals = {
   :breakfast => "bacon and eggs",
   :lunch => "chicken soup",
@@ -110,12 +109,12 @@ meals.delete(:snack)
 ################################
 # 4. SETTING DEFAULT VALUES
 
-# Set a default value when creating a hash like this: 
+# Set a default value when creating a hash like this:
 
 meals = Hash.new("Eat whatever you want!")
 
-p meals 
-# empty hash 
+p meals
+# empty hash
 # {}
 
 meals[:breakfast] = "bacon and eggs"
@@ -156,7 +155,6 @@ students = {
   roxanne: 12,
   solene: 55
 }
-
 
 # using .each
 
